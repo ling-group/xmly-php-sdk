@@ -26,7 +26,7 @@ class XmlyServiceProvider extends ServiceProvider
     protected function setupConfig()
     {
 
-        $config = __DIR__ . '/../config/xmly.php';
+        $config = __DIR__ . '/../../config/xmly.php';
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([
